@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 4px;
+    }#screen{
+        width: 170px;
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        text-align: right;
+        background-color: black ;
+        color: aliceblue;
+         }
+    .operator{
+        background-color: orangered;
+        color: #ffffff;
+    }
+</style>
+<body>
+<input id="screen" value="">
+<br>
+<button onclick="ClickNumber(1)">1</button>
+<button onclick="ClickNumber(2)">2</button>
+<button onclick="ClickNumber(3)">3</button>
+<button class="operator" onclick="ClickCaculator('+')">+</button>
+<br>
+<button onclick="ClickNumber(4)">4</button>
+<button onclick="ClickNumber(5)">5</button>
+<button onclick="ClickNumber(6)">6</button>
+<button class="operator" onclick="ClickCaculator('-')">-</button>
+<br>
+<button onclick="ClickNumber(7)">7</button>
+<button onclick="ClickNumber(8)">8</button>
+<button onclick="ClickNumber(9)">9</button>
+<button class="operator" onclick="ClickCaculator('*')">x</button>
+<br>
+<button onclick="ClearScreen('C')">C</button>
+<button onclick="ClickNumber(0)">0</button>
+<button type="button" onclick="ClickCaculator('=')">=</button>
+<button class="operator" onclick="ClickCaculator('/')">/</button>
+
+<script>
+    let screen=document.getElementById("screen");
+    function ClickNumber(value) {
+        screen.value+=value;
+
+    }function ClickCaculator() {
+        let result = eval(screen.value);
+        screen.value=result;
+
+    }
+    
+
+
+</script>
+
+</body>
+</html>
