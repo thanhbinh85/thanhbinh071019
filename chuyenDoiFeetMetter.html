@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p Metter></p>
+<input id="m" type="text" onclick="convertToFeet" >
+<button type="button" onclick="convertToFeet()">Convert</button>
+<p id="result1"></p>
+<p Feet></p>
+<input id="f" type="text" onclick="convertToMet">
+<button type="button" onclick="convertToMet()">Convert</button>
+<p id="result2"></p>
+<script>
+    function convertToFeet() {
+        let a=document.getElementById("m").value;
+        let b=a*3.279
+        document.getElementById("result1").innerHTML=b+" feet";
+
+    }
+    function convertToMet() {
+        let c=document.getElementById("f").value;
+        let d=c*0.305
+        document.getElementById("result2").innerHTML=d+" m"
+
+    }
+
+</script>
+
+</body>
+</html>
