@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var number = parseInt(prompt("nhâp số lượng số nguyên tố"));
+
+    var count;
+
+    var n;
+
+    var divitor = 0;
+
+    for (count = 2; count <= number; count++){
+
+        for (n=1; n <= number;n++ ){
+
+            if (count % n === 0)
+
+                divitor++;
+
+        }
+
+        if (divitor === 2)
+
+            document.write(count + '<br>');
+
+        divitor = 0;
+
+    }
+
+</script>
+
+</body>
+</html>
