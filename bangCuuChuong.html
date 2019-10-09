@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+
+    <p style="text-align: center" >bang cuu chuong</p>
+
+</table>
+
+<script>
+
+    let i, j;
+
+    let sout = "<table width='400' border='1' style='margin: auto'  >";
+
+    for (i = 2; i <= 10; i++) {
+
+        sout = sout + "<tr>";
+
+        for (j = 1; j <= 10; j++) {
+
+            sout = sout + "<td>" + i + "x" + j + "=" + i * j + "</td>";
+
+        }
+
+        sout + "</tr>";
+
+    }
+
+    sout = sout + "</table>";
+
+    document.write(sout);
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
